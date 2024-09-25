@@ -1,0 +1,94 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	font-style: normal;
+	color: #475658;
+}
+
+h1 {
+	font-size: 45px;
+	font-weight: 700;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.btn {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 19px 65px;
+	background-color: transparent;
+	border: 1px solid #121761;
+	border-radius: 10px;
+	transition: ease .3s;
+}
+
+.btn:hover {
+	color: #FFFFFF;
+	border: 1px solid #D44B4B;
+	background-color: #D44B4B;
+	transition: ease .3s;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+	-moz-appearance: textfield;
+}

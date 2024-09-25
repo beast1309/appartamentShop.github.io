@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="header__logo" href="#">
+                        <img class="header__logo-img" src="images/logo.svg" alt="">
+                    </a>
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Как продать квартиру</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="#">Истории клиентов</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a class="header__list-link" href="tel:+74958354711">+ 7 495 835 47 11</a>
+                        </li>
+                    </ul>
+                    <button class="header__button btn">Перезвоните мне</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="questions">
+                <div class="container">
+                    <div class="questions__inner">
+                        <h2 class="questions__title">Пройдите небольшой опрос и узнайте, как <span>избежать рисков при
+                                продаже или покупке</span> вашей квартиры</h2>
+                        <div class="questions__question">
+                            <p class="questions__question-subtitle">Вопрос 1</p>
+                            <p class="questions__question-title">Какие у вас правоустанавливающие документы?</p>
+                            <div class="questions__question-form" id="questionsForm">
+                                <div class="questions__question-radio__container">
+                                    <label class="questions__question-radio__label question-one">
+                                        <input class="questions__question-radio__input" name="questions-radio"
+                                            type="radio" id="question" value="1">
+                                        <span class="questions__question-radio__span">Договор купли-продажи</span>
+                                    </label>
+                                    <label class="questions__question-radio__label question-one">
+                                        <input class="questions__question-radio__input" name="questions-radio"
+                                            type="radio" id="question" value="2">
+                                        <span class="questions__question-radio__span">Договор дарения</span>
+                                    </label>
+                                    <label class="questions__question-radio__label question-one">
+                                        <input class="questions__question-radio__input" name="questions-radio"
+                                            type="radio" id="question" value="3">
+                                        <span class="questions__question-radio__span">Договор приватизации</span>
+                                    </label>
+                                    <label class="questions__question-radio__label question-one">
+                                        <input class="questions__question-radio__input" name="questions-radio"
+                                            type="radio" id="question" value="4">
+                                        <span class="questions__question-radio__span">Справка ЖСК</span>
+                                    </label>
+                                    <label class="questions__question-radio__label question-one">
+                                        <input class="questions__question-radio__input" name="questions-radio"
+                                            type="radio" id="question" value="5">
+                                        <span class="questions__question-radio__span">Свидетельство о праве на
+                                            наследство</span>
+                                    </label>
+                                    <label class="questions__question-radio__label question-one">
+                                        <input class="questions__question-radio__input" name="questions-radio"
+                                            type="radio" id="question" value="6">
+                                        <span class="questions__question-radio__span">Договор долевого участия</span>
+                                    </label>
+                                </div>
+                                <div class="questions__question-navigation">
+                                    <button class="questions__question-navigation__btn btn prev"
+                                        id="questionsPrev">Назад</button>
+                                    <button class="questions__question-navigation__btn btn next"
+                                        id="questionsNext">Далее</button>
+                                </div>
+                                <div class="questions__question-progressbar">
+                                    <meter class="questions__question-progressbar__meter" min="1" max="9"
+                                        value="1"></meter>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <a class="footer__logo" href="#">
+                        <img class="footer__logo-img" src="images/footer-logo.svg" alt="">
+                    </a>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="#">г. Москва, Красная площадь д.1</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__list-link" href="tel:+74958354711">+ 7 495 835 47 11</a>
+                        </li>
+                    </ul>
+                    <ul class="footer__info">
+                        <li class="footer__info-item">
+                            <p class="footer__list-text">Режим работы</p>
+                        </li>
+                        <li class="footer__info-item">
+                            <p class="footer__info-text">Пн. - Пт. - с 9:00 до 17:00</p>
+                        </li>
+                        <li class="footer__info-item">
+                            <p class="footer__info-text">Сб. - Вс. - с 9:00 до 17:00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
